@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>interactive-rating-component-main</title>
+</head>
+<body class="vh-100 d-flex justify-content-center align-items-center">
+    <!-- Rating state start -->
+    <main class="app d-flex flex-column justify-content-center align-items-center ">
+        <div class="rating-state" id="rating-state">
+            <img src="./images/icon-star.svg" alt="" class="mb-4">
+            <h1>How did we do?</h1>
+            <p  class="mb-4">Please let us know how we did with your support request. All feedback is appreciated 
+                to help us improve our offering!</p>
+
+            <ul class="mb-4">
+                <li><button class="rate-btn">1</button></li>
+                <li><button class="rate-btn">2</button></li>
+                <li><button class="rate-btn">3</button></li>
+                <li><button class="rate-btn">4</button></li>
+                <li><button class="rate-btn">5</button></li>
+            </ul>
+
+          <button class="submit-btn  text-uppercase d-block w-100 rounded-5" id="rating-btn">Submit</button>
+            
+        </div>
+
+  
+
+  <!-- Rating state end -->
+  <div class="thank-you text-center hidden" id="thank-state">
+    <!-- Thank you state start -->
+
+    <img src="./images/illustration-thank-you.svg" alt="" class="mb-4">
+
+    <p class="gray bg-secondary py-1 text-primary w-50 rounded-5 m-auto mb-4">You selected <!-- Add rating here -->
+        <span class="rating"></span>
+         out of 5</p>
+    <h4 class="fw-bold">Thank you!</h4>
+    <p  >We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+        <button class="rate-again text-uppercase d-block w-100 rounded-5">Rate Again</button>
+  <!-- Thank you state end -->
+  </div>
+
+  
+    </main>
+  
+    <script src="./app.js"></script>
+</body>
+</html>

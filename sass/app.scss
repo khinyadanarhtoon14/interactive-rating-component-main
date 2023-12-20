@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+$font-family-sans-serif:'Overpass', sans-serif;
+$headings-color:hsl(0, 0%, 100%);
+$secondary:hsl(217deg 10.8% 25.01%);
+$body-color:hsl(217, 12%, 63%);
+$primary:hsl(25, 97%, 53%);
+$body-bg:hsl(216, 12%, 8%);
+$font-size-base:0.938rem;
+
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rating-state,.thank-you{
+    max-width: 400px;
+    background: hsl(213, 19%, 18%);
+    padding:1.5rem;
+    border-radius: 10px;
+}
+.rating-state img{
+    background:hsl(213, 12%, 29%);
+    padding: 15px;
+    border-radius: 50%;
+}
+.rating-state p{
+    line-height: 1.5rem;
+}
+.rating-state ul{
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+.rating-state ul li button{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    border-width: 0px;
+    background: hsl(213, 12%, 29%);
+    color:hsl(217, 12%, 63%);
+    cursor: pointer;
+
+
+}
+.rating-state ul li button:hover:focus{
+    background:hsl(217, 12%, 63%);
+    color:hsl(0, 0%, 100%) ;
+    
+}
+
+.rating-state ul li button:hover{
+    background:hsl(25, 97%, 53%);
+    
+    color:hsl(0, 0%, 100%) ;
+}
+
+.submit-btn,
+.rate-again{
+    background:hsl(25, 97%, 53%);
+    letter-spacing: .1rem;
+    padding:.5rem 0;
+    color:hsl(0, 0%, 100%);
+    border-width: 0;
+}
+.submit-btn:hover,
+.rate-again:hover{
+    background: hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
+}
+
+.rate-again .rating{
+    background: hsl(213, 12%, 29%);
+    padding:.5rem 0;
+}
+.hidden{
+    display: none;
+}
